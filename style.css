@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    padding:10px;
+    align-items: center;
+}
+button{
+    background: none;
+    border: none;
+}
+.top_wrapper{
+    display: inline-block;
+    width: 100%;
+    height: 1035px;
+    background: #F9F5FF;
+    padding: 0px 112px 0px;
+}
+header{    
+    position: relative;
+    width: 100%;
+    height: 96px;
+    border-radius: 16px;
+    margin-top: 32px;
+    background: #FFFFFF;
+    box-shadow: #F3EFEF inset 77%;
+    font-family: Inter;
+    font-size: 16px;
+}
+nav{
+    /* position: absolute; */
+    display: flex;
+    padding: 3rem 0rem 3rem 2rem;
+    width: 100%;
+    height: 72px;
+    align-content:center;
+    align-items: center;
+}
+.logo_container{
+    height: 72px;
+    width: 76.72px;
+    background-image: url(/icons/logo.svg);
+
+}
+.sm_logo {
+    
+}
+.sm_container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: 40px;
+    gap: 1rem;
+}
+
+.tele_image{
+    height: 20px;
+    width: 20px;
+    background-image: url(/icons/telegram.svg);
+}
+.wa_image{ 
+    height: 20px;
+    width: 20px;
+    background-image: url(/icons/whatsapp.svg);
+}
+.vk_image{
+    height: 20px;
+    width: 20px;
+    background-image: url(/icons/vk.svg);
+}
+.icon_word { 
+       
+    display: flex;
+    justify-content: center;
+    align-content:center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+}
+.phone_number p{
+    justify-content: center;
+    display: inline-block;
+    
+}
+    .icon_word p:hover{
+    color: #01EEE1;
+    text-decoration: none;
+    }
+.contacts :hover{
+    color: #01EEE1;
+    text-decoration: none;
+}    
+.burger{
+    background-image: url(/icons/Burger.svg);
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 32px;
+    top: 28px;
+}
+.burger:hover{
+    cursor: pointer;
+}
+
+.visa_application {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    gap: 10px;
+    width: 100%;
+}
+
+.banner_bigLettersText {
+font-family: Rubik;
+font-size: 65px;
+font-weight: 600;
+line-height: 80px;
+letter-spacing: -0.02em;
+text-align: left;
+height: 100px;
+display: block;
+}
+
+.second_string {
+    background-color:#F0E7FD;
+    color: #872FEE;
+    display: inline-block;
+    padding: 4px 12px 8px 12px;
+    border-radius: 20px 20px 0px 20px;
+}
+
+.banner_getConsultation {
+margin-top: 0rem;        
+width: 268px;
+height:60px;
+background-color: #A35BFB;
+padding: 20px 35px;
+border-radius: 16px;
+font-family: Inter;
+color: #FCFCFC;
+}
+.banner_getConsultation:hover{
+    cursor: pointer;
+}
+
+.girl_square {
+    width: 100%;      
+    height: 365px;     
+    background-image: url(/icons/Mdasya.svg); 
+    background-size:contain; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+.card_services {
+    margin-top: 5rem;
+    width: 100%;
+    height: 260px;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+.card_services_element {
+    width: 17.5rem;
+    height: 16.25rem;
+
+}
+.card_1 {
+    background-image: url(/icons/card_services_1.svg);
+
+}
+.card_2 {
+    background-image: url(/icons/card_services_2.svg);
+}
+.card_3 {
+    background-image: url(/icons/card_services_3.svg);
+}
+.card_4 {
+    background-image: url(/icons/card_services_4.svg);
+}
+
+.second_block {
+    display: inline-block;
+    width: 100%;
+    height: 696px;
+    background: #F4FFC2;
+    padding: 0px 112px 0px;
+}
+.popular_directions_wrapper {
+    display: block;
+    padding-top: 112px;
+    margin: 0 auto;
+    max-width: 809px;
+}
+h2{
+    text-align: center;
+font-family: Rubik;
+font-size: 64px;
+font-weight: 500;
+line-height: 60px;
+letter-spacing: -0.02em;
+color: #872FEE;
+
+}
+h3{
+margin-top: 24px;
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-weight: 400;
+line-height: 30px;
+text-align: center;
+color: #872FEE;
+
+}
+.popularCountryBlocks {
+    margin-top:1rem;
+    width: 100%;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    
+}
+.country_block {
+    width: 384px;
+    height: 330px;
+}
+.country_block_image{
+      width: 100%;
+      height: 100%;
+}
+.country_ImageBlock_1 {
+    background-image: url(/icons/frame_spain.png);
+    background-size:contain; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+.country_ImageBlock_2 {
+    background-image: url(/icons/frame_france.png);
+    background-size:contain; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+.country_ImageBlock_3 {
+    background-image: url(/icons/frame_italy.png);
+    background-size:contain; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+.country_block_buttonsBlock {
+    margin-top:-3rem;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 35px;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 0 0 20px 20px;
+}
+.countryCardName {
+font-family: Inter;
+font-size: 20px;
+font-weight: 600;
+line-height: 30px;
+color: #A35BFB;
+
+}
+.connect_button {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 171px;
+    height: 40px;
+    background-color: #872FEE;
+    border-radius:8px;
+    color:#FFFFFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+
+}
+.connect_button:hover{
+    cursor: pointer;
+}

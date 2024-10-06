@@ -7,6 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./icons/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
     <title>DaRi Travel</title>
 </head>
 
@@ -15,41 +20,43 @@
         <header>
             <nav>
                 <div class="logo_container">
-                    <button class="logo"></button>
+                    <a class="logo" href="https://daritravel.ru/"></a>
                 </div>
 
                 <div class="sm_container">
                     <!-- Телеграм -->
                     <a class="tele_container icon_word" href="https://t.me/dari_travel">
-                        <div class="tele_image sm_logo"></div>
-                        <p class="tele">Telegram</p>
+                        <img src="/icons/telegram.svg" alt="telegram_icon" class="tele_image sm_logo">
+                        <span class="tele">Telegram</span>
                     </a>
                     <!-- Whatsapp -->
                     <a class="wa_container icon_word" href="https://web.whatsapp.com/">
-                        <div class="wa_image sm_logo"></div>
-                        <p class="wa">Whatsapp</p>
+                        <img src="/icons/whatsapp.svg" alt="whatsapp_icon" class="wa_image sm_logo">
+                        <span class="wa">Whatsapp</span>
                     </a>
                     <!-- VK -->
                     <a class="vk_container icon_word" href="https://vk.com/@daritravel">
-                        <div class="vk_image sm_logo"></div>
-                        <p class="vk">VK</p>
+                        <img src="/icons/vk.svg" alt="vk_icon" class="vk_image sm_logo">
+                        <span class="vk">VK</span>
                     </a>
                     <!-- Email -->
                     <a class="email contacts" href="mailto:info@daritravel.ru">
-                        <p>info@daritravel.ru</p>
+                        <span>info@daritravel.ru</span>
                     </a>
                     <a class="phone_number contacts" href="tel:+7(675)876-98-87">
-                        <p>+7(675)876-98-87</p>
+                        <span>+7(675)876-98-87</span>
                     </a>
 
                 </div>
 
             </nav>
             <button class="burger">
-
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
         </header>
-        <div class="first_block">
+        <div class="grandVisaApplicationBlock">
 
             <div class="visa_application">
                 <div class="banner">
@@ -60,26 +67,78 @@
                     </div>
                     <div class="banner_getConsultation">Получить консультацию</div>
                 </div>
-                <div class="girl_square"></div>
+                <div class="girl_square">
+                    <div class="margo_block">
+                        <!--Блок Марго -->
+                        <div class="margo_sticker"></div>
+                        <div class="margo_link_block">
+                            <a class="tele_container icon_word" href="https://t.me/RoshMargo">
+                                <img src="/icons/telegram.svg" alt="telegram_icon" class="tele_image sm_logo">
+                                <span class="tele">@RoshMargo</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="stickerPlanetBlock"></div>
+                    <div class="curvedLineBlock"></div>
+                    <div class="dasya_block">
+                        <!--Блок Дася -->
+                        <div class="dasya_sticker"></div>
+                        <div class="dasya_link_block">
+                            <a class="tele_container icon_word" href="https://t.me/dasya_surikova">
+                                <img src="/icons/telegram.svg" alt="telegram_icon" class="tele_image sm_logo">
+                                <span class="tele">@dasya_surikova</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="card_services">
-                <div class="card_services_element card_1"></div>
-                <div class="card_services_element card_2"></div>
-                <div class="card_services_element card_3"></div>
-                <div class="card_services_element card_4"></div>
+                <div class="card_services_element card_1">
+                    <div class="card_1_vector"></div>
+                    <div class="card_services_element_icon card_icon_1"></div>
+                    <h3>Подбор пакетных туров</h3>
+                </div>
+                <div class="card_services_element card_2">
+                    <div class="card_2_vector"></div>
+                    <div class="card_services_element_icon card_icon_2"></div>
+                    <h3>Тревел-сопровождение</h3>
+                </div>
+                <div class="card_services_element card_3">
+                    <div class="card_3_vector"></div>
+                    <div class="card_services_element_icon card_icon_3"></div>
+                    <h3>Визовый сервис</h3>
+                </div>
+                <div class="card_services_element card_4">
+                    <div class="card_4_vector"></div>
+                    <div class="card_services_element_icon card_icon_4"></div>
+                    <h3>ДаРи Тревел клуб</h3>
+                </div>
             </div>
         </div>
     </div>
     <div class="main_wrapper">
         <!-- Начало основного блока -->
-        <div class="second_block">
+        <div class="grandPopularDirectionsWrapper">
             <div class="popular_directions_wrapper">
                 <h2>Популярные направления</h2>
-                <h3>Оформите визу в самые популярные страны Европы быстро и без лишних хлопот. Наши специалисты помогут вам с документами и предоставят полное сопровождение.</h2>
+                <h3>Оформите визу в самые популярные страны Европы быстро и без лишних хлопот. Наши специалисты помогут
+                    вам с документами и предоставят полное сопровождение.</h2>
             </div>
             <div class="popularCountryBlocks">
                 <div class="country_block">
                     <div class="country_block_image country_ImageBlock_1"></div>
+                    <div class="spain_photo_block country_circle_image_block"></div>
+                    <div class="spain_sun_block country_left_block">
+                        <img class="country_left_block_icon" src="/icons/spain_sun.svg" alt="spain_sun">
+                    </div>
+                    <div class="spain_flag_block country_flag_block">
+                        <img class="country_flag_block_icon" src="/icons/spain_flag.svg" alt="spain_flag">
+                    </div>
+                    <div class="spain_dancingGirl_block country_right_bottom_block">
+                        <img class="country_right_bottom_block_icon" src="/icons/spain_dancing_girl.svg"
+                            alt="spain_dancing_girl">
+                    </div>
+
                     <div class="country_block_buttonsBlock">
                         <div class="countryCardName">Испания</div>
                         <div class="connect_button">Пообщаться с нами</div>
@@ -87,6 +146,17 @@
                 </div>
                 <div class="country_block">
                     <div class="country_block_image country_ImageBlock_2"></div>
+                    <div class="france_photo_block country_circle_image_block"></div>
+                    <div class="france_clapper_block country_left_block">
+                        <img class="country_left_block_icon" src="/icons/france_clapper.svg" alt="france_clapper">
+                    </div>
+                    <div class="france_flag_block country_flag_block">
+                        <img class="country_flag_block_icon" src="/icons/france_flag.svg" alt="france_flag">
+                    </div>
+                    <div class="france_palette_block country_right_bottom_block">
+                        <img class="country_right_bottom_block_icon" src="/icons/france_palette.svg"
+                            alt="france_palette">
+                    </div>
                     <div class="country_block_buttonsBlock">
                         <div class="countryCardName">Франция</div>
                         <div class="connect_button">Пообщаться с нами</div>
@@ -94,6 +164,18 @@
                 </div>
                 <div class="country_block">
                     <div class="country_block_image country_ImageBlock_3"></div>
+                    <div class="italy_photo_block country_circle_image_block"></div>
+                    <div class="italy_column_block country_left_block">
+                        <img class="country_left_block_icon" src="/icons/italy_column_building.svg"
+                            alt="italy_column_building">
+                    </div>
+                    <div class="italy_flag_block country_flag_block">
+                        <img class="country_flag_block_icon" src="/icons/italy_flag.svg" alt="italy_flag">
+                    </div>
+                    <div class="italy_italy_fingers_block country_right_bottom_block">
+                        <img class="country_right_bottom_block_icon italy_fingers_icon" src="/icons/italy_fingers.png"
+                            alt="italy_fingers">
+                    </div>
                     <div class="country_block_buttonsBlock">
                         <div class="countryCardName">Италия</div>
                         <div class="connect_button">Пообщаться с нами</div>

@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -61,8 +59,14 @@ nav{
     background-image: url(/icons/logo.svg);
 
 }
-.sm_logo {
+.logo {
+    width: 100%;
+    height: 100%;
     
+}
+.sm_logo{
+    width: 100%;
+    height: 100%;  
 }
 .sm_container{
     display: flex;
@@ -75,17 +79,14 @@ nav{
 .tele_image{
     height: 20px;
     width: 20px;
-    background-image: url(/icons/telegram.svg);
 }
 .wa_image{ 
     height: 20px;
     width: 20px;
-    background-image: url(/icons/whatsapp.svg);
 }
 .vk_image{
     height: 20px;
     width: 20px;
-    background-image: url(/icons/vk.svg);
 }
 .icon_word { 
        
@@ -101,7 +102,7 @@ nav{
     display: inline-block;
     
 }
-    .icon_word p:hover{
+    .icon_word :hover{
     color: #01EEE1;
     text-decoration: none;
     }
@@ -110,15 +111,40 @@ nav{
     text-decoration: none;
 }    
 .burger{
-    background-image: url(/icons/Burger.svg);
     width: 40px;
     height: 40px;
+    border: 2px solid #d1d5db;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
     position: absolute;
     right: 32px;
     top: 28px;
 }
+.burger span {
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #1f2937; /* Темный цвет */
+    margin: 4px 0;
+    border-radius: 2px;
+}
+.burger span:first-child{
+    top: 20px;
+}
+.burger span:last-child{
+    bottom: 20px;
+}
 .burger:hover{
     cursor: pointer;
+    background-color: rgba(210, 214, 219, 0.2);
+
+}
+.burger-menu span:hover {
+    background-color: #000;
 }
 
 .visa_application {
@@ -149,8 +175,11 @@ display: block;
 }
 
 .banner_getConsultation {
+font-size: 18px;
+font-weight: 600;
+line-height: 28px;
 margin-top: 0rem;        
-width: 268px;
+width: 300px;
 height:60px;
 background-color: #A35BFB;
 padding: 20px 35px;
@@ -160,44 +189,209 @@ color: #FCFCFC;
 }
 .banner_getConsultation:hover{
     cursor: pointer;
+    background-color: rgba(163, 91, 251, 0.9);
 }
 
 .girl_square {
     width: 100%;      
-    height: 365px;     
-    background-image: url(/icons/Mdasya.svg); 
+    display: inline-block;
+    position: relative;
+}
+.margo_block {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 337px;
+    width: 176px;
+    z-index: 15;
+}
+.margo_sticker {
+    background-image: url(/icons/sticker_margo.svg);
     background-size:contain; 
     background-position: center; 
     background-repeat: no-repeat;
+    width: 100%;
+    height: 176px;
+    transform: rotate(-5deg);
+    margin-bottom: 10px;
+}
+.margo_link_block {
+    width: 162px;
+    height: 40px;
+    border: 1px solid #D2D6DB;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: #ffffff;
+    
+}
+.margo_link_block span{
+font-family: Inter;
+font-size: 14px;
+font-weight: 600;
+line-height: 20px;
+color: black;
+
+}
+.tele_container {
+}
+.icon_word {
+}
+.tele_image {
+}
+.sm_logo {
+}
+.tele {
+}
+.stickerPlanetBlock {
+    position: absolute;
+    top: 10px;
+    right: -5px;
+    background-image: url(/icons/sticker_earth.svg);
+    height: 145px;
+    width: 145px; 
+}
+.curvedLineBlock {
+   position: absolute;
+    top: 10px;
+    right: 10px;
+    background-image: url(/icons/duga.png);
+    background-size:contain; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    z-index: 1; 
+}
+.dasya_block {
+    position: absolute;
+    top: 200px;
+    right: 10px;
+    height: 337px;
+    width: 176px;
+    z-index: 20;
+}
+.dasya_sticker {
+        background-image: url(/icons/sticker_dasya.svg);
+        width: 100%;
+        height: 176px;
+        transform: rotate(3deg);
+        background-size:contain; 
+        background-position: center; 
+        background-repeat: no-repeat;
+}
+.dasya_link_block {
+        width: 162px;
+        height: 40px;
+        border: 1px solid #D2D6DB;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        background-color: #ffffff;
+        border-radius: 8px;
+}
+.dasya_link_block span{
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: black;
 }
 .card_services {
     margin-top: 5rem;
     width: 100%;
     height: 260px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 32px;
 }
 .card_services_element {
     width: 17.5rem;
     height: 16.25rem;
+    position: relative;
+border-radius: 20px 20px 20px 0px;
+background-color: #EEE1FD;
+}
+.card_services_element:nth-child(1){
+    background-image: url(/icons/vector_toolbox.png);
+    background-repeat: no-repeat;
+    background-position: -100px;
+    background-size: cover;
+}
+.card_services_element:nth-child(2){
+    background-image: url(/icons/vector_map.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.card_services_element:nth-child(3){
+    background-image: url(/icons/vector_hand_up_man.png);
+    background-repeat: no-repeat;
+    background-position: 20px;
+    background-size: cover;
+}
+.card_services_element:last-child{
+    background-image: url(/icons/vector_plane.png);
+    background-repeat: no-repeat;
+    background-position: 40px;
+    background-size: cover;
+}
+.card_services_element h3{
+display: block;
+padding: 0 auto;
+margin-top: 11rem;
+font-family: Rubik;
+font-size: 1.5rem;
+text-align: center;
+font-weight: 500;
+line-height: 38px;
+z-index: 25;
 
 }
 .card_1 {
-    background-image: url(/icons/card_services_1.svg);
+}
+.card_1_vector {
+}
+
+.card_services_element_icon {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 25;
+
+}
+.card_icon_1{
+    background-image: url(/icons/toolbox_icon.svg);
+}
+.card_icon_2{
+    background-image: url(/icons/map_icon.svg) 
+}
+.card_icon_3{
+    background-image:  url(/icons/man_hand_up_icon.svg);
+}
+.card_icon_4{
+    background-image:url(/icons/airplane_icon.svg);
+    position: absolute;
+    z-index: 5;
 
 }
 .card_2 {
-    background-image: url(/icons/card_services_2.svg);
-}
-.card_3 {
-    background-image: url(/icons/card_services_3.svg);
-}
-.card_4 {
-    background-image: url(/icons/card_services_4.svg);
 }
 
-.second_block {
+
+
+.card_3 {
+}
+
+
+
+.card_4 {
+}
+
+
+.grandPopularDirectionsWrapper {
     display: inline-block;
     width: 100%;
     height: 696px;
@@ -243,31 +437,122 @@ color: #872FEE;
 .country_block {
     width: 384px;
     height: 330px;
+    position: relative;
+    background-color: #E6D4FF;
+    border-radius: 20px;
+    overflow: hidden;
 }
-.country_block_image{
-      width: 100%;
-      height: 100%;
+
+.country_block_image {
+    background-image: url(/icons/frame_circles.svg);
+    position: absolute;
+    left: -4rem;
+    top: -2rem;
+    z-index: 3;
+    background-repeat: repeat;
+    width: 118%;
+    height: 100%;
+
 }
-.country_ImageBlock_1 {
-    background-image: url(/icons/frame_spain.png);
-    background-size:contain; 
-    background-position: center; 
+.country_circle_image_block{
+    position: absolute;
+    bottom: -3rem;
+    left: 2.5rem;
+    width: 284px;
+    height: 100%;
+    z-index: 25;
+    border-radius: 8px #FFFFFF solid;
+}
+.spain_photo_block {
+    
+    background-image: url(/icons/spain_round_photo.png);
+    background-repeat: no-repeat;
+
+
+}
+.spain_sun_block {
+}
+.spain_flag_block {
+}
+.spain_dancingGirl_block {
+}
+.france_photo_block {
+    background-image: url(/icons/france_round_photo.png);
     background-repeat: no-repeat;
 }
-.country_ImageBlock_2 {
-    background-image: url(/icons/frame_france.png);
-    background-size:contain; 
-    background-position: center; 
+.italy_photo_block {
+    background-image: url(/icons/italy_round_photo.png);
     background-repeat: no-repeat;
 }
-.country_ImageBlock_3 {
-    background-image: url(/icons/frame_italy.png);
-    background-size:contain; 
-    background-position: center; 
-    background-repeat: no-repeat;
+.spain_sun_block {
 }
+.country_left_block {
+    position: absolute;
+    left: 1rem;
+    top: 2rem;
+    z-index: 30;
+    background-color: #ffffff;
+    width: 102px;
+    height: 102px;
+    border-radius:100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.spain_flag_block {
+}
+.country_flag_block {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 30;
+    background-color: #ffffff;
+    width: 64px;
+    height: 64px;
+    border-radius:100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.spain_dancingGirl_block {
+}
+.country_right_bottom_block {
+    position: absolute;
+    right: 1rem;
+    bottom: 6.5rem;
+    z-index: 30;
+    background-color: #ffffff;
+    width: 47px;
+    height: 47px;
+    border-radius:100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.country_left_block_icon{
+    width: 80px;
+    height: 100%;
+
+}
+.country_flag_block_icon{
+    width: 37px;
+    height: 32px;
+    
+}
+.country_right_bottom_block_icon{
+    width: 32px;
+    height: 100%;
+    
+}
+.italy_fingers_icon{
+    width: 32px;
+    height: 32px;
+}
+
 .country_block_buttonsBlock {
-    margin-top:-3rem;
+    position: absolute;
+    bottom: 0;
+    z-index:100;
     width: 100%;
     height: 4rem;
     display: flex;
@@ -302,4 +587,6 @@ color: #A35BFB;
 }
 .connect_button:hover{
     cursor: pointer;
+    background-color: rgba(163, 91, 251, 0.9);
 }
+
